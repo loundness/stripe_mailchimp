@@ -18,7 +18,7 @@ Pour tester cette application, importez le dossier sur votre pc, en suivant les 
 
 ```Importez dans votre dossier,
 
-git clone https://github.com/willyGitHub18/services-lyon-x/releases
+git clone https://github.com/loundness/stripe_mailchimp
 
 puis cd services-lyon-x
 
@@ -29,4 +29,4 @@ rails db:migrate
 rails server
 ```
 
-Pour accéder à la page Heroku,[voici le lien] https://stripemaichimp.herokuapp.com/
+Pour accéder à la page Heroku,[voici le lien](https://stripemaichimp.herokuapp.com/)
