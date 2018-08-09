@@ -1,20 +1,33 @@
-<h3>Merci pour le paiement de <strong>€5.00</strong>!</h3>
-<div>veuillez saisir votre nom et prénom pour finaliser la procedure d'inscription a la newsletter</div>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-<%= form_for @user, url: {action: "subscribe"} do |f| %>
 
-  <div class="form-group">
-    <%= f.label(:first_name, "Nom")%>
-    <%= f.text_field :first_name, class: 'form-control',placeholder: "Saisir son nom" %>
-  </div>
-	<div class="form-group">
-    <%= f.label(:last_name, "Prenom")%>
-    <%= f.text_field :last_name, class: 'form-control',placeholder: "Saisir son prenom" %>
-  </div>
-  <div class="form-group">
-     <%= f.label(:email, "Email")%>
-     <%= f.email_field :email, class: 'form-control', placeholder: "Saisir son email" %>
-   </div>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">
+          Merci pour le paiement de <strong>€5.00</strong>!</h1>
+        <p class="lead">veuillez saisir votre nom et prénom pour finaliser la procedure d'inscription a la newsletter</p>
 
-  <%= f.submit "Créer un nouvel utilisateur" %>
-<% end %>
+
+        <%= form_for @user, url: {action: "subscribe"} do |f| %>
+
+          <div class="form-group">
+            <%= f.label(:first_name, "Nom")%>
+            <%= f.text_field :first_name, class: 'form-control',placeholder: "Saisir son nom" %>
+          </div>
+        	<div class="form-group">
+            <%= f.label(:last_name, "Prenom")%>
+            <%= f.text_field :last_name, class: 'form-control',placeholder: "Saisir son prenom" %>
+          </div>
+          <div class="form-group">
+             <%= f.label(:email, "Email")%>
+             <%= f.email_field :email, class: 'form-control', placeholder: "Saisir son email" %>
+           </div>
+
+          <%= f.submit "Créer un nouvel utilisateur" %>
+        <% end %>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        </div>
+      </footer>
+    </div>
