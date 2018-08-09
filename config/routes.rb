@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   post '/charges',  to: 'charges#create'
 
   post 'subscribe' => 'charges#subscribe'
-  get 'subscribe' => 'charges#subscribe'                                                                  
+                                                                   
 end

@@ -1,4 +1,4 @@
-# [Stripe_maichimp](https://stripemaichimp.herokuapp.com/)
+# [Stripe_mailchimp](https://stripemaichimp.herokuapp.com/)
 
 Ce Readme permet dans un formulaire de renseigner son adresse mail et de payer pour accéder à une newsletter.
 
