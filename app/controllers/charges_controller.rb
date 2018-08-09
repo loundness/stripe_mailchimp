@@ -3,6 +3,9 @@ class ChargesController < ApplicationController
 	end
 
 	def create
+		@user = User.new
+
+
 		  # Amount in cents
 		  @amount = 500
 
@@ -21,6 +24,19 @@ class ChargesController < ApplicationController
 	rescue Stripe::CardError => e
 		  flash[:error] = e.message
 		  redirect_to new_charge_path
+	end
+
+
+	def subscribe
+
+		user = params["user"]
+
+		gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_KEY'])
+	  gibbon.timeout = 30
+		gibbon.open_timeout = 30
+
+		gibbon.lists(ENV['MAILCHIMP_LIST']).members.create(body:{email_address: user["email"], status: "subscribed", merge_fields:{FNAME: user["first_name"], LNAME:user["last_name"]} })
+
 	end
 
 
