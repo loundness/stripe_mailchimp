@@ -28,4 +28,4 @@ rails db:migrate
 
 rails server
 ```
-https://stripemaichimp.herokuapp.com/
+# Pour accéder à la page Heroku,[voici le lien] https://stripemaichimp.herokuapp.com/
