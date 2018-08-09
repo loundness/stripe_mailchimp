@@ -4,7 +4,7 @@ Ce Readme permet dans un formulaire de renseigner son adresse mail et de payer p
 
 
 ------------------------------
-# On utilise;$
+# On utilise;
 
 * la base sqlite3
 * ruby '2.5.1'
@@ -14,7 +14,7 @@ Ce Readme permet dans un formulaire de renseigner son adresse mail et de payer p
 ------------------------------
 # Instructions #
 
-Pour tester cette application, importer le dossier sur votre pc, en suivant les instructions suivantes;
+Pour tester cette application, importez le dossier sur votre pc, en suivant les instructions suivantes;
 
 ```Importez dans votre dossier,
 
