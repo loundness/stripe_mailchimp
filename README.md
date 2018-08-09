@@ -20,7 +20,7 @@ Pour tester cette application, importez le dossier sur votre pc, en suivant les 
 
 git clone https://github.com/loundness/stripe_mailchimp
 
-puis cd services-lyon-x
+puis cd stripe_mailchimp
 
 bundle install --without production
 
