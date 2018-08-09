@@ -16,17 +16,18 @@ Ce Readme permet dans un formulaire de renseigner son adresse mail et de payer p
 
 Pour tester cette application, importez le dossier sur votre pc, en suivant les instructions suivantes;
 
-```Importez dans votre dossier,
+```sh
+Importez dans votre dossier,
 
-git clone https://github.com/loundness/stripe_mailchimp
+$ git clone https://github.com/loundness/stripe_mailchimp
 
-puis cd stripe_mailchimp
+$ cd stripe_mailchimp
 
-bundle install --without production
+$ bundle install --without production
 
-rails db:migrate
+$ rails db:migrate
 
-rails server
+$ rails server
 ```
 
 Pour accéder à la page Heroku, [voici le lien](https://stripemaichimp.herokuapp.com/)
